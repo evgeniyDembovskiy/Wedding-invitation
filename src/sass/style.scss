@@ -1,0 +1,37 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/flipdown';
+@import 'libs/animate.min';
+// @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import "base/variables";
+
+
+@import "blocks/nav";
+@import "blocks/main";
+@import "blocks/menu";
+@import "blocks/invitation";
+@import "blocks/timer";
+@import "blocks/location";
+@import "blocks/way";
+@import "blocks/gallery";
+@import "blocks/program";
+@import "blocks/form";
+@import "blocks/modal";
+@import "blocks/fireworks";
+
+
+@import "base/media";
+body {
+    font-display: block;
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}

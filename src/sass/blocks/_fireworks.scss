@@ -1,0 +1,177 @@
+.firework {
+    position: absolute;
+    top: 0;
+    left: 0;
+    &__explosion {
+        position: absolute;
+        left: -2px;
+        bottom: 0;
+        width: 4px;
+        height: 80px;
+        transform-origin: 50% 100%;
+        // background-color: rgba(0, 0, 0, .2);
+        overflow: hidden;
+        &:nth-child(1) {
+            transform: rotate(0deg) translateY(-10px);
+        }
+        &:nth-child(2) {
+            transform: rotate(30deg) translateY(-10px);
+        }
+        &:nth-child(3) {
+            transform: rotate(60deg) translateY(-10px);
+        }
+        &:nth-child(4) {
+            transform: rotate(90deg) translateY(-10px);
+        }
+        &:nth-child(5) {
+            transform: rotate(120deg) translateY(-10px);
+        }
+        &:nth-child(6) {
+            transform: rotate(150deg) translateY(-10px);
+        }
+        &:nth-child(7) {
+            transform: rotate(180deg) translateY(-10px);
+        }
+        &:nth-child(8) {
+            transform: rotate(210deg) translateY(-10px);
+        }
+        &:nth-child(9) {
+            transform: rotate(240deg) translateY(-10px);
+        }
+        &:nth-child(10) {
+            transform: rotate(270deg) translateY(-10px);
+        }
+        &:nth-child(11) {
+            transform: rotate(300deg) translateY(-10px);
+        }
+        &:nth-child(12) {
+            transform: rotate(330deg) translateY(-10px);
+        }
+    
+    
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 40px;
+            // background-color: rgb(238, 205, 16);
+            background: linear-gradient(to bottom, yellow 70%, rgb(253, 216, 5) 30%);
+            border-radius: 5px;
+            animation: explosion 1s ease-in-out infinite;
+            animation-delay: .4s;
+        }
+    
+        @keyframes explosion {
+            0% {
+                top: 100%;
+            }
+            // 33% {
+            //     top: -50%;
+            // } 
+            100% {
+                top: -50%;
+            }
+        }
+    }
+    &__path {
+        position: absolute;
+        left: -2px;
+        bottom: 0;
+        width: 4px;
+        height: 200px;
+        transform-origin: 50% 100%;
+        // background-color: rgba(0, 0, 0, .2);
+        transform: rotate(135deg);
+        overflow: hidden;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0%;
+            height: 50px;
+            background-color: rgb(238, 205, 16);
+            border-radius: 5px;
+            animation: path 1s ease infinite;
+            // animation-delay: 2s;
+        }
+        @keyframes path {
+            0% {
+                top: 0;
+            }
+            100% {
+                opacity: 0;
+                top: 100%;
+            }
+        }
+    }
+}
+
+#firework1 {
+    top: -135px;
+    left: 11px;
+    .firework__explosion::before {
+        background-color: rgb(255, 217, 0);
+        // animation-delay: .2s;
+    }
+}
+#firework2 {
+    top: -187px;
+    left: -128px;
+    transform: scale(0.8);
+    .firework__explosion::before {
+        animation-delay: .6s;
+    }
+    .firework__path {
+        transform: rotate(235deg);
+    }
+}
+#firework3 {
+    top: -80px;
+    left: -90px;
+    transform: scale(0.4);
+    .firework__explosion::before {
+        background-color: rgb(255, 217, 0);
+        animation-delay: .5s;
+    }
+    .firework__path {
+        transform: rotate(198deg);
+    }
+}
+#firework4 {
+    top: 200px;
+    left: 600px;
+    transform: scale(0.7);
+    .firework__explosion::before {
+        background-color: rgb(255, 217, 0);
+        animation-delay: .5s;
+    }
+    .firework__path {
+        transform: rotate(145deg);
+    }
+}
+#firework5 {
+    top: 300px;
+    left: 800px;
+    transform: scale(0.9);
+    .firework__explosion::before {
+        animation-delay: .6s;
+    }
+    .firework__path {
+        transform: rotate(170deg);
+    }
+}
+
+#firework6 {
+    top: 300px;
+    left: 600px;
+    .firework__explosion::before {
+        background-color: rgb(255, 217, 0);
+        animation-delay: .8s;
+    }
+    .firework__path {
+        transform: rotate(220deg);
+    }
+}

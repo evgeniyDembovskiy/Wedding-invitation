@@ -1,0 +1,23 @@
+.way {
+    padding-top: 50px;
+    box-shadow: 0px -2px 10px rgb(201, 201, 201);
+    background-color: $main-color;
+    min-height: 520px;
+    &__title {
+        text-align: center;
+        font-size: 85px;
+        font-weight: 400;
+        line-height: 85px;
+        color: $section-title-color
+    }
+    &__text {
+        
+        padding: 65px 90px 0px 90px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 50px;
+        line-height: 100%;
+        color: $section-title-color;
+    }
+}

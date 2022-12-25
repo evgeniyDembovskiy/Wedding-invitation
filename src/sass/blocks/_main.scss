@@ -1,0 +1,35 @@
+.main {
+    position: relative;
+    margin-top: 65px;
+    height: 100vh;
+    background: url(../img/bg/main_bg.jpg); //center center / cover no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    z-index: -2;
+    &__symbol {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -75%);
+        z-index: -1;
+    }
+    &__title {
+        margin: 0 auto;
+        text-align: center;
+        width: 630px;
+        // padding-top: 160px;
+        padding-top: 5%;
+        font-size: 200px;
+        font-weight: 400;
+        line-height: 200px;
+        color: $main-title-color;
+        z-index: 1;
+    }
+    &__subtitle {
+        color: $contrast-color;
+        font-size: 101px;
+        line-height: 100px;
+        text-align: center;
+        z-index: 2;
+    }
+}

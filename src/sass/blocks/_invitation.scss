@@ -1,0 +1,47 @@
+.invitation {
+    position: relative;
+    min-height: 800px;
+    padding-top: 138px;
+    box-shadow: 0px -2px 10px rgb(201, 201, 201);
+    &__text {
+        margin: 0 auto;
+        width: 1110px;
+        text-align: center;
+        font-size: 85px;
+        font-weight: 400;
+        line-height: 100%;
+        color: $section-title-color;
+    }
+    &__confirm {
+        display: block;
+        margin: 100px auto 0 auto;
+        width: 560px;
+        height: 82px;
+        background-color: #475526;
+        color: #fff;
+        font-size: 50px;
+        line-height: 74px;
+        text-align: center;
+
+        border-radius: 10px;
+        border: 3px solid #475526;
+        transition: .3s all;
+        &:hover {
+            text-decoration: none;
+            background-color: #fff;
+            color: #475526;
+        }
+    }
+    &__left-leaf {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+    }
+    &__right-leaf {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 40px;
+    }
+}

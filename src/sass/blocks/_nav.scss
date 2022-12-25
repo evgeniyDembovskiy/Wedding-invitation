@@ -1,0 +1,48 @@
+.nav {
+    padding: 10px 0;
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 0 -3px 10px #000;
+
+    //*********************** 
+    // display: none;
+    //*************************
+
+    &__item {
+        position: relative;
+        color: $main-title-color;
+        &:hover {
+            color: $main-title-color;
+            text-decoration: none;
+            transition: all .2s;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 90%;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                // background-color: #718a38;
+                background-color: $main-title-color;
+                animation: fromLeftToRight .4s ease;
+            }
+        }
+    }
+}
+
+@keyframes fromLeftToRight {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
